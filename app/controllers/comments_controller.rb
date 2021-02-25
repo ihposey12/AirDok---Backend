@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
         
     #     if comment.valid?
     #         comment.save
-    #         ***
+    #         
     #     else
     #         render json: :new
     #     end
