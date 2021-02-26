@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :comments
 
   post 'login', to: 'auth#create'
-  post 'signup', to: 'user#create'
+  post 'signup', to: 'users#create'
   get 'persist', to: 'auth#show'
 end
