@@ -6,6 +6,7 @@ class CommentsController < ApplicationController
     
     def new
         comment = Comment.new
+        render json: comment.id
     end
 
     # def create

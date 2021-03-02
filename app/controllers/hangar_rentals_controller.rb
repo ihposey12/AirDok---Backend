@@ -6,5 +6,6 @@ class HangarRentalsController < ApplicationController
 
     def show
         hangar_rental = HangarRental.find(params[:id])
+        render json: hangar_rental
     end
 end
