@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   post 'signup', to: 'users#create'
   get 'persist', to: 'auth#show'
   get 'hangars', to: 'hangars#index'
+  get 'hangars', to: 'hangar#show'
   get 'users', to: 'users#show'
+  get 'comments', to: 'comments#index'
+  get 'comments', to: 'comments#show'
 end
