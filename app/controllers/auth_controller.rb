@@ -5,9 +5,9 @@ class AuthController < ApplicationController
         @user = User.find_by(username: params[:username])
         if @user && @user.authenticate(params[:password])
             my_token = encode_token({user_id: @user.id})
-            render json: {id: @user.id, token: my_token}
+            render json: {user: @user, token: my_token, success: 'Welcome back!'}, include: [:comments, :hangars]
         else
-            render json: {error: 'User Not Found'}, status: 401
+            render json: {error: 'Uh oh! Username and/or Password is invalid!'}, status: 401
         end
     end
 

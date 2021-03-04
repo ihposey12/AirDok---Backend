@@ -129,19 +129,19 @@ h10 = Hangar.create(
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
 
-hr1 = HangarRental.create(
-    startDate: ,
-    endDate: ,
-    user_id: ,
-    hangar_id: 
-)
+# hr1 = HangarRental.create(
+#     startDate: ,
+#     endDate: ,
+#     user_id: ,
+#     hangar_id: 
+# )
 
 c1 = Comment.create(
     title: 'Amazing!',
     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
     rating: 5,
-    user_id: 1,
-    hangar_id: 1
+    user_id: 11,
+    hangar_id: 11
 )
 
 puts 'seeds loaded!'

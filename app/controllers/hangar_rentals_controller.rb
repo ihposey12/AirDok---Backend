@@ -8,4 +8,8 @@ class HangarRentalsController < ApplicationController
         hangar_rental = HangarRental.find(params[:id])
         render json: hangar_rental
     end
+
+    # def create
+
+    # end
 end

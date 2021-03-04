@@ -3,7 +3,7 @@ class HangarsController < ApplicationController
 
     def index 
         hangars = Hangar.all
-        render json: hangars
+        render json: hangars, include: [:comments]
     end
 
     def show

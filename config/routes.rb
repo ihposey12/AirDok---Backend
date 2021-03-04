@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   resources :comments
 
   post '/login', to: 'auth#create'
-  post 'signup', to: 'users#create'
-  get 'persist', to: 'auth#show'
-  get 'hangars', to: 'hangars#index'
-  get 'hangars', to: 'hangar#show'
-  get 'users', to: 'users#show'
+  post '/signup', to: 'users#create'
+  get '/persist', to: 'auth#show'
+  get '/hangars', to: 'hangars#index'
+  get '/hangars', to: 'hangar#show'
+  get '/users', to: 'users#show'
   get 'comments', to: 'comments#index'
-  get 'comments', to: 'comments#show'
+  get 'comment', to: 'comment#show'
 end
