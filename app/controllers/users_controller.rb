@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authorized, only: [:show]
+    skip_before_action :authorized, only: [:show, :create]
 
     def show
         user = User.find(params[:id])
@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
         if @user.valid?
             my_token = encode_token({user_id: @user})
-            render json: {user: @user, token: my_token}
+            render json: {user: UserSerializer.new(@user), token: my_token}
         else
             render json: {error: 'failed to create a user'}
         end

@@ -41,3 +41,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #JWT
 gem 'jwt'
+
+#SERIALIZER
+gem 'active_model_serializers', '~> 0.10.7'
