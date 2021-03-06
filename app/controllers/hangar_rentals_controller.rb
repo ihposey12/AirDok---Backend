@@ -9,7 +9,19 @@ class HangarRentalsController < ApplicationController
         render json: hangar_rental
     end
 
-    # def create
+    def create
+        @rental = HangarRental.new(rental_params)
+        
+        if @rental.save
+            render json: @rental
+        else
+            render json: {error: @rental.errors.messages}
+        end
+    end
 
-    # end
+    private
+
+    def rental_params
+        params.require(:hangar_rental).permit(:start_date, :end_date, :hangar_id, :user_id)
+    end
 end

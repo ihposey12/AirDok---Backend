@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   post '/login', to: 'auth#create'
   post '/signup', to: 'users#create'
+  post '/hangar_rentals', to: 'hangar_rentals#create'
   get '/persist', to: 'auth#show'
   get '/hangars', to: 'hangars#index'
   get '/hangars', to: 'hangar#show'

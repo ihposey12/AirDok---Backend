@@ -2,12 +2,14 @@ class HangarsController < ApplicationController
     skip_before_action :authorized, only: [:index]
 
     def index 
-        hangars = Hangar.all
-        render json: hangars, include: [:comments]
+        @hangars = Hangar.all
+        render json: @hangars
+
+
     end
 
     def show
         hangar = Hangar.find(params[:id])
-        render json: hangar
+        render json: HangarSerializer.new(hangar)
     end
 end
