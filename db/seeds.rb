@@ -79,13 +79,13 @@ h4 = Hangar.create(
 )
 
 h5 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
-    size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
-    price: 1000.00, 
+    title: 'Small, clean hangar. (Cessna 172 or Lower)', 
+    description: 'I have a very small hangar up for rent. It suits most small planes up to cesnna 172. I use it frequently but have lately been to busy to fly, so I parked it at home.', 
+    airport_codesize: 'PAO', 
+    size: '30 x 40', 
+    city: 'Palo Alto', 
+    state: 'California', 
+    price: 320.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
 
@@ -94,8 +94,8 @@ h6 = Hangar.create(
     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
     airport_codesize: 'BGR', 
     size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
+    city: 'Haleyville', 
+    state: 'Alabama', 
     price: 1000.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
@@ -105,8 +105,8 @@ h7 = Hangar.create(
     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
     airport_codesize: 'BGR', 
     size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
+    city: 'Tuscaloosa', 
+    state: 'Alabama', 
     price: 1000.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
@@ -116,8 +116,8 @@ h8 = Hangar.create(
     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
     airport_codesize: 'BGR', 
     size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
+    city: 'Aspen', 
+    state: 'Colorado', 
     price: 1000.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
@@ -127,8 +127,8 @@ h9 = Hangar.create(
     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
     airport_codesize: 'BGR', 
     size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
+    city: 'Whitefish', 
+    state: 'Montana', 
     price: 1000.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
@@ -138,8 +138,8 @@ h10 = Hangar.create(
     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
     airport_codesize: 'BGR', 
     size: '100 x 125', 
-    city: 'Bangor', 
-    state: 'Maine', 
+    city: 'Jackson Hole', 
+    state: 'Wyoming', 
     price: 1000.00, 
     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 )
@@ -148,8 +148,8 @@ h10 = Hangar.create(
 #     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
 #     airport_codesize: 'BGR', 
 #     size: '100 x 125', 
-#     city: 'Bangor', 
-#     state: 'Maine', 
+#     city: 'Seattle', 
+#     state: 'Washington', 
 #     price: 1000.00, 
 #     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 # )
@@ -159,8 +159,8 @@ h10 = Hangar.create(
 #     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
 #     airport_codesize: 'BGR', 
 #     size: '100 x 125', 
-#     city: 'Bangor', 
-#     state: 'Maine', 
+#     city: 'Boulder', 
+#     state: 'Colorado', 
 #     price: 1000.00, 
 #     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
 # )
@@ -169,22 +169,22 @@ h10 = Hangar.create(
 # hr1 = HangarRental.create(
 #     startDate: '04/19/2021',
 #     endDate: '04/23/2021',
-#     user_id: 11,
-#     hangar_id: 11
+#     user_id: nikki.id,
+#     hangar_id: h11.id
 # )
 
 # hr2 = HangarRental.create(
 #     startDate: '12/25/2021',
 #     endDate: '01/03/2022',
-#     user_id: 12,
-#     hangar_id: 12
+#     user_id: dillon.id,
+#     hangar_id: h9.id
 # )
 
 # hr3 = HangarRental.create(
 #     startDate: '06/20/2021',
 #     endDate: '06/29/2021',
-#     user_id: 13,
-#     hangar_id: 13
+#     user_id: hunter.id,
+#     hangar_id: h1.id
 # )
 
 # //COMMENTS
@@ -197,58 +197,42 @@ c1 = Comment.create(
 )
 
 # c2 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+#     title: 'Good for the price.',
+#     description: 'It was a decent hangar for the price. A little messy. ',
 #     rating: 3,
-#     user_id: 12,
-#     hangar_id: 13
+#     user_id: dillon.id,
+#     hangar_id: h3.id
 # )
 
 # c3 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+#     title: 'Perfect',
+#     description: 'Awesome place. Good airport. I had to wait an hour to get the keys, other than that, great purchase.',
 #     rating: 4,
-#     user_id: 13,
-#     hangar_id: 15
+#     user_id: nikki.id,
+#     hangar_id: h5.id
 # )
 # c4 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+#     title: 'GREAT HANGAR',
+#     description: 'Such a pleasure getting to rent this hangar for the weekend. We were able to rest easy knowing the plane was in good shape. And the money saved was so worth it!!',
 #     rating: 4,
-#     user_id: 11,
-#     hangar_id: 17
+#     user_id: hunter.id,
+#     hangar_id: h7.id
 # )
 
 # c5 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+#     title: 'Loved it',
+#     description: 'Luxury hangar. So awesome. Looked like something out of iron man!',
 #     rating: 5,
-#     user_id: 12,
-#     hangar_id: 19
+#     user_id: dillon.id,
+#     hangar_id: h9.id
 # )
 
 # c6 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
-#     rating: 5,
-#     user_id: 13,
-#     hangar_id: 21
-# )
-
-# c7 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
-#     rating: 5,
-#     user_id: 11,
-#     hangar_id: 23
-# )
-
-# c8 = Comment.create(
-#     title: 'Amazing!',
-#     description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+#     title: 'Dont reserve this...',
+#     description: 'Really awful. Does not look at all like the picture. Airport service was awful. Owner was 3 hours late to give me the code.',
 #     rating: 2,
-#     user_id: 12,
-#     hangar_id: 25
+#     user_id: nikki.id,
+#     hangar_id: h11.id
 # )
 
 puts 'seeds loaded!'
