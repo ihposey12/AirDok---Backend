@@ -13,7 +13,7 @@ class HangarRentalsController < ApplicationController
         @rental = HangarRental.new(rental_params)
         
         if @rental.save
-            render json: @rental
+            render json: {user: UserSerializer.new(@user)}
         else
             render json: {error: @rental.errors.messages}
         end

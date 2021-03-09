@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
     skip_before_action :authorized, only: [:index]
 
     def index
-        # comments = Comment.where(user_id: @user_id)
         comments = Comment.all
         render json: comments, status: 200
     end
@@ -16,32 +15,19 @@ class CommentsController < ApplicationController
         comment = Comment.new(comment_params)
         
         if comment.save
-            render json: comment
+            hangar = Hangar.find(comment_params[:hangar_id])
+            render json: {user: UserSerializer.new(@user), hangar: HangarSerializer.new(hangar)}
         else
             render json: {error: comment.errors.messages}
         end
     end
 
-    # def edit
-    #     comment = Comment.find(params[:id])
-    # end
-
-    # def update
-    #     comment = Comment.find(params[:id])
-    #     comment.update(comment_params)
-
-    #     if comment.valid?
-    #         ***
-    #     else
-    #         render json: :edit
-    #     end
-    # end
-
-    # def destroy
-    #     comment = Comment.find(params[:id])
-    #     comment.destroy
-    #     ***
-    # end
+    def destroy
+        comment = Comment.find(params[:id])
+        hangar = Hangar.find(comment.hangar_id)
+        comment.destroy
+        render json: {user: UserSerializer.new(@user), hangar: HangarSerializer.new(hangar)}
+    end
 
     private
 
