@@ -86,83 +86,83 @@ h5 = Hangar.create(
     city: 'Palo Alto', 
     state: 'California', 
     price: 320.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    picture: 'https://greenbuildingelements.com/wp-content/uploads/2019/02/Aircraft-hangars-30x40-hangar-metal-building-rendering-2-1024x576.jpg'
 )
 
 h6 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
-    size: '100 x 125', 
+    title: 'Good size hangar. Older but very well kept.', 
+    description: 'Good size hangar at the posey regional airport in Haleyville. Used to house a small leer jet. Great price', 
+    airport_codesize: '1M4', 
+    size: '50 x 60', 
     city: 'Haleyville', 
     state: 'Alabama', 
-    price: 1000.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    price: 450.00, 
+    picture: 'https://greenbuildingelements.com/wp-content/uploads/2019/02/Aircraft-hangars-80x100-hangar-metal-building-rendering-2-400x400.jpg'
 )
 
 h7 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
+    title: 'HUGE HANGAR. Perfect for leer jets of anysize', 
+    description: 'Large and luxurious leer jet hangar at the tuscaloosa regional airport. Houses the University of Alabama Football team plane during off season.', 
+    airport_codesize: 'TCL', 
     size: '100 x 125', 
     city: 'Tuscaloosa', 
     state: 'Alabama', 
-    price: 1000.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    price: 900.00, 
+    picture: 'https://i.pinimg.com/originals/46/96/d0/4696d01f4d9f3c4a147f68006cb0a5c4.jpg'
 )
 
 h8 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
+    title: 'Luxury hangar at Aspen Airport', 
+    description: 'Dont let your jet sit out in the harsh weather of colorado on your visit to Aspen. Vacation with comfort knowing your aircraft is safe and sound in this incredible private jet hangar.', 
+    airport_codesize: 'ASE', 
     size: '100 x 125', 
     city: 'Aspen', 
     state: 'Colorado', 
-    price: 1000.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    price: 1500.00, 
+    picture: 'https://storage.googleapis.com/stateless-aeroclassifieds-main/2018/12/01-Lear35A-288.jpg'
 )
 
 h9 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
-    size: '100 x 125', 
+    title: 'Great little hangar for all hobby pilots on a weekend getaway!', 
+    description: 'Small and lovely plane hangar to fit all your needs on your visit to whitefish. This hangar is brand new and spotless. Ready for arrival! Small planes only.', 
+    airport_codesize: 'FCA', 
+    size: '30 x 40', 
     city: 'Whitefish', 
     state: 'Montana', 
-    price: 1000.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    price: 775.00, 
+    picture: 'https://www.farmtek.com/wcsstore/EngineeringServices/allbizunits/prodimages/large/107552Ta.jpg'
 )
 
 h10 = Hangar.create(
-    title: 'Entire Hangar ~ Perfect for large planes!', 
-    description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-    airport_codesize: 'BGR', 
-    size: '100 x 125', 
+    title: 'Newly renovated cowboy airplane hangar', 
+    description: 'Unique and lovely airplane hangar, customized for that jackson hole feel. Small planes only. The hangar is quite small but will fit most hobbyist aircraft.', 
+    airport_codesize: 'JAC', 
+    size: '30 x 40', 
     city: 'Jackson Hole', 
     state: 'Wyoming', 
-    price: 1000.00, 
-    picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+    price: 200.00, 
+    picture: 'https://www.bifold.com/assets/photooftheday/polycarbonate-bifold-hangar-doors-14b.jpg'
 )
 # h11 = Hangar.create(
-#     title: 'Entire Hangar ~ Perfect for large planes!', 
-#     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-#     airport_codesize: 'BGR', 
+#     title: 'Perfect hangar for the weekend trip!', 
+#     description: 'Mid size hangar available for weekends only in seattle. This hangar is new and very well taken care of. My plane is housed inside at all times. However, there is more than enough room for another midsize plane!', 
+#     airport_codesize: 'SEA', 
 #     size: '100 x 125', 
 #     city: 'Seattle', 
 #     state: 'Washington', 
-#     price: 1000.00, 
-#     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+#     price: 1100.00, 
+#     picture: 'https://i.pinimg.com/originals/bd/b6/0b/bdb60b767ea848d2d2c55d53f500db86.jpg'
 # )
 
 # h12 = Hangar.create(
-#     title: 'Entire Hangar ~ Perfect for large planes!', 
-#     description: 'Large, empty hangar at the Bangor Regional Airport. Perfect for large jets. Very Clean. Small planes not preferred but welcome', 
-#     airport_codesize: 'BGR', 
-#     size: '100 x 125', 
+#     title: 'Get lost in the rockies!', 
+#     description: 'On your next visit to the rockies, be sure to check out our new hangar! This hangar is fully equipped to serve all hobbyist planes. Available at all times through reservation. Just hit reserve!!!', 
+#     airport_codesize: 'BDU', 
+#     size: '50 x 60', 
 #     city: 'Boulder', 
 #     state: 'Colorado', 
-#     price: 1000.00, 
-#     picture: 'https://www.hurricanesteelbuildings.com/images/aircraft-hangars-metal-buidings.jpg'
+#     price: 800.00, 
+#     picture: 'https://www-static.bouldercolorado.gov/docs/banners/1399760724_leasinginformation2.jpg'
 # )
 
 # //HANGAR RENTALS

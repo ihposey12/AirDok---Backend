@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get '/hangars', to: 'hangars#index'
   get '/hangars', to: 'hangar#show'
   get '/users', to: 'users#show'
-  get 'comments', to: 'comments#index'
-  get 'comment', to: 'comment#show'
+  get '/comments', to: 'comments#index'
+  get '/comment', to: 'comment#show'
 end
