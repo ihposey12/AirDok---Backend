@@ -1,11 +1,9 @@
 class HangarsController < ApplicationController
     skip_before_action :authorized, only: [:index]
 
-    def index 
+    def index
         @hangars = Hangar.all
         render json: @hangars
-
-
     end
 
     def show
