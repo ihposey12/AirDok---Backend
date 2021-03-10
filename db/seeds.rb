@@ -9,7 +9,7 @@
 User.destroy_all
 Hangar.destroy_all
 Comment.destroy_all
-# HangarRental.destroy_all
+HangarRental.destroy_all
 
 #USERS
 hunter = User.create(
@@ -19,19 +19,19 @@ hunter = User.create(
     email: 'ihposey@crimson.ua.edu'
 )
 
-# dillon = User.create(
-#     name: 'Dillon Posey', 
-#     username: 'dposey12', 
-#     password: '1234', 
-#     email: 'dposey12@gmail.com'
-# )
+dillon = User.create(
+    name: 'Dillon Posey', 
+    username: 'dposey12', 
+    password: '1234', 
+    email: 'dposey12@gmail.com'
+)
 
-# nikki = User.create(
-#     name: 'Nicole Dix', 
-#     username: 'nIkKi23', 
-#     password: '1234', 
-#     email: 'nikkidix@yahoo.com'
-# )
+nikki = User.create(
+    name: 'Nicole Dix', 
+    username: 'nIkKi23', 
+    password: '1234', 
+    email: 'nikkidix@yahoo.com'
+)
 
 #HANGARS
 h1 = Hangar.create(
@@ -143,96 +143,98 @@ h10 = Hangar.create(
     price: 200.00, 
     picture: 'https://www.bifold.com/assets/photooftheday/polycarbonate-bifold-hangar-doors-14b.jpg'
 )
-# h11 = Hangar.create(
-#     title: 'Perfect hangar for the weekend trip!', 
-#     description: 'Mid size hangar available for weekends only in seattle. This hangar is new and very well taken care of. My plane is housed inside at all times. However, there is more than enough room for another midsize plane!', 
-#     airport_codesize: 'SEA', 
-#     size: '100 x 125', 
-#     city: 'Seattle', 
-#     state: 'Washington', 
-#     price: 1100.00, 
-#     picture: 'https://i.pinimg.com/originals/bd/b6/0b/bdb60b767ea848d2d2c55d53f500db86.jpg'
-# )
 
-# h12 = Hangar.create(
-#     title: 'Get lost in the rockies!', 
-#     description: 'On your next visit to the rockies, be sure to check out our new hangar! This hangar is fully equipped to serve all hobbyist planes. Available at all times through reservation. Just hit reserve!!!', 
-#     airport_codesize: 'BDU', 
-#     size: '50 x 60', 
-#     city: 'Boulder', 
-#     state: 'Colorado', 
-#     price: 800.00, 
-#     picture: 'https://www-static.bouldercolorado.gov/docs/banners/1399760724_leasinginformation2.jpg'
-# )
+h11 = Hangar.create(
+    title: 'Perfect hangar for the weekend trip!', 
+    description: 'Mid size hangar available for weekends only in seattle. This hangar is new and very well taken care of. My plane is housed inside at all times. However, there is more than enough room for another midsize plane!', 
+    airport_codesize: 'SEA', 
+    size: '100 x 125', 
+    city: 'Seattle', 
+    state: 'Washington', 
+    price: 1100.00, 
+    picture: 'https://i.pinimg.com/originals/bd/b6/0b/bdb60b767ea848d2d2c55d53f500db86.jpg'
+)
+
+h12 = Hangar.create(
+    title: 'Get lost in the rockies!', 
+    description: 'On your next visit to the rockies, be sure to check out our new hangar! This hangar is fully equipped to serve all hobbyist planes. Available at all times through reservation. Just hit reserve!!!', 
+    airport_codesize: 'BDU', 
+    size: '50 x 60', 
+    city: 'Boulder', 
+    state: 'Colorado', 
+    price: 800.00, 
+    picture: 'https://www-static.bouldercolorado.gov/docs/banners/1399760724_leasinginformation2.jpg'
+)
 
 # //HANGAR RENTALS
-# hr1 = HangarRental.create(
-#     startDate: '04/19/2021',
-#     endDate: '04/23/2021',
-#     user_id: nikki.id,
-#     hangar_id: h11.id
-# )
+hr1 = HangarRental.create(
+    start_date: '04/19/2021',
+    end_date: '04/23/2021',
+    user_id: nikki.id,
+    hangar_id: h11.id
+)
 
-# hr2 = HangarRental.create(
-#     startDate: '12/25/2021',
-#     endDate: '01/03/2022',
-#     user_id: dillon.id,
-#     hangar_id: h9.id
-# )
+hr2 = HangarRental.create(
+    start_date: '12/25/2021',
+    end_date: '01/03/2022',
+    user_id: dillon.id,
+    hangar_id: h9.id
+)
 
-# hr3 = HangarRental.create(
-#     startDate: '06/20/2021',
-#     endDate: '06/29/2021',
-#     user_id: hunter.id,
-#     hangar_id: h1.id
-# )
+hr3 = HangarRental.create(
+    start_date: '06/20/2021',
+    end_date: '06/29/2021',
+    user_id: hunter.id,
+    hangar_id: h1.id
+)
 
 # //COMMENTS
 c1 = Comment.create(
     title: 'Amazing!',
-    description: 'So much cheaper than the FBO! Will definitately do this again. It was a pleasure doing business with Bob!',
+    description: 'So much cheaper than the FBO! Will definitely do this again. It was a pleasure doing business with Bob!',
     rating: 5,
     user_id: hunter.id,
     hangar_id: h1.id
 )
 
-# c2 = Comment.create(
-#     title: 'Good for the price.',
-#     description: 'It was a decent hangar for the price. A little messy. ',
-#     rating: 3,
-#     user_id: dillon.id,
-#     hangar_id: h3.id
-# )
+c2 = Comment.create(
+    title: 'Good for the price.',
+    description: 'It was a decent hangar for the price. A little messy. ',
+    rating: 3,
+    user_id: dillon.id,
+    hangar_id: h3.id
+)
 
-# c3 = Comment.create(
-#     title: 'Perfect',
-#     description: 'Awesome place. Good airport. I had to wait an hour to get the keys, other than that, great purchase.',
-#     rating: 4,
-#     user_id: nikki.id,
-#     hangar_id: h5.id
-# )
-# c4 = Comment.create(
-#     title: 'GREAT HANGAR',
-#     description: 'Such a pleasure getting to rent this hangar for the weekend. We were able to rest easy knowing the plane was in good shape. And the money saved was so worth it!!',
-#     rating: 4,
-#     user_id: hunter.id,
-#     hangar_id: h7.id
-# )
+c3 = Comment.create(
+    title: 'Perfect',
+    description: 'Awesome place. Good airport. I had to wait an hour to get the keys, other than that, great purchase.',
+    rating: 4,
+    user_id: nikki.id,
+    hangar_id: h5.id
+)
 
-# c5 = Comment.create(
-#     title: 'Loved it',
-#     description: 'Luxury hangar. So awesome. Looked like something out of iron man!',
-#     rating: 5,
-#     user_id: dillon.id,
-#     hangar_id: h9.id
-# )
+c4 = Comment.create(
+    title: 'GREAT HANGAR',
+    description: 'Such a pleasure getting to rent this hangar for the weekend. We were able to rest easy knowing the plane was in good shape. And the money saved was so worth it!!',
+    rating: 4,
+    user_id: hunter.id,
+    hangar_id: h7.id
+)
 
-# c6 = Comment.create(
-#     title: 'Dont reserve this...',
-#     description: 'Really awful. Does not look at all like the picture. Airport service was awful. Owner was 3 hours late to give me the code.',
-#     rating: 2,
-#     user_id: nikki.id,
-#     hangar_id: h11.id
-# )
+c5 = Comment.create(
+    title: 'Loved it',
+    description: 'Luxury hangar. So awesome. Looked like something out of iron man!',
+    rating: 5,
+    user_id: dillon.id,
+    hangar_id: h9.id
+)
+
+c6 = Comment.create(
+    title: 'Dont reserve this...',
+    description: 'Really awful. Does not look at all like the picture. Airport service was awful. Owner was 3 hours late to give me the code.',
+    rating: 2,
+    user_id: nikki.id,
+    hangar_id: h11.id
+)
 
 puts 'seeds loaded!'
